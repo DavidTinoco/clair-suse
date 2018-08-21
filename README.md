@@ -40,3 +40,7 @@ docker-compose up -d
 ### Customize it
 
 I give you a **config.yaml** to Clair, but you can edit and modify to your personal objetives, like another database to don't use in the  docker-compose.yaml
+
+### Keep in mind
+
+The first time you run clair with an empty database, it takes a while to fill the database.

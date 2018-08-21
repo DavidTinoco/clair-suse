@@ -1,0 +1,23 @@
+version: "2"
+
+services:
+  postgres:
+    image: postgres:9.6
+    environment:
+      POSTGRES_PASSWORD: "postgres"
+
+  registry:
+    image: registry:2
+    expose:
+      - 5000
+    ports:
+      - 5000:5000
+
+  clair:
+    image: davtincas/clair-suse:0.5
+    depends_on:
+      - postgres
+    links:
+      - postgres:postgres
+    ports:
+      - 6060:6060

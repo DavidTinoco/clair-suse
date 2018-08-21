@@ -1,7 +1,7 @@
 # clair-suse
 Clair with (unofficial) SUSE module, dockerized.
 
-Today, Clair doesn't support SUSE distributions, but [flavio](https://github.com/flavio) did a pull request to introduce it, and i just get his code, introduce on personal project and compile it, to, then, create a Docker Image with it.
+Today, Clair doesn't support SUSE distributions, but flavio did a pull request to introduce it, and i use his code, introducing it on personal project and compile it, to, then, create a Docker Image with it.
 
 The steps are so simply.
 

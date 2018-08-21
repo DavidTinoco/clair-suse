@@ -1,5 +1,7 @@
 FROM opensuse/leap:42.3
 
+LABEL maintainer="daviid.tc@gmail.com"
+
 RUN zypper in -y git \
         xz \
         rpm \
